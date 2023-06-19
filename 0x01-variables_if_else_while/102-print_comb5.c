@@ -19,18 +19,18 @@ int main(void)
 			{
 				for (d = 0; d <= 9; d++)
 				{
-					if (a + b != c + d)
+					if ((a + b) != (c + d)a)
 					{
 						putchar(a + '0');
 						putchar(b + '0');
 						putchar(' ');
 						putchar(c + '0');
 						putchar(d + '0');
-					}
-					if (a !=  9)
-					{
-						putchar(',');
-						putchar(' ');
+						if (a != 9)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
