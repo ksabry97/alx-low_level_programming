@@ -2,6 +2,7 @@
 /**
  *  _islower - Entry point
  * @C: is an integer
+ *
  * Return: void
  */
 int _islower(int c)
