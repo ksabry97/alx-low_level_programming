@@ -6,7 +6,7 @@
  */
 int _isalpha(int c)
 {
-	if (65 <= c <= 122)
+	if (64 < c < 123)
 	{
 		return (1);
 	}
