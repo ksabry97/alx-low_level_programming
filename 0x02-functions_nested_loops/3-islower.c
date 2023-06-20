@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *  _islower - Entry point
- * @C: is an integer
- *
- * Return: void
+ * _islower - check lowercase
+ *@c: integer
+ * Return: (1) success else (0)
  */
 int _islower(int c)
 {
