@@ -15,10 +15,10 @@ void jack_bauer(void)
 		for (b = 0; b < 10; b++)
 		{
 			if (a == 2 && b > 3)
-			{ 
+			{
 				return;
 			}
-			else 
+			else
 			{
 				for (c = 0; c < 6; c++)
 			{
