@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - check the code.
+ * main - check multibles
  *
- * Return: Always (0)
+ * Return: (0) always success
  */
 int main(void)
 {
