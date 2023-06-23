@@ -3,7 +3,7 @@
  * more_numbers - print most of numbers
  * Return: void
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	int i;
 	int j;
