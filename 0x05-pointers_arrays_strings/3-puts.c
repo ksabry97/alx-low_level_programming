@@ -1,5 +1,5 @@
-#include <main.h>
 #include <string.h>
+#include "main.h"
 /**
  * _puts - returns astring
  * @str: pointer
