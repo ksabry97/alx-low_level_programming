@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <string.h>
 /**
  * _strcat - copies a string
  * @dest: pointer
@@ -8,6 +8,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
+	int i;
+	int x;
+	int y;
+
+	x = strlen(dest);
+	y = strlen(src);
+	for (i = 0; i < y; i++)
+	{
+		dest[x + i] = src[i];
+	}
 	return (dest);
 }
