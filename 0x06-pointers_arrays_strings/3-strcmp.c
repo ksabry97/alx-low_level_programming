@@ -4,7 +4,7 @@
  * @s1: pointer
  * @s2: pointer
  *
- * Return: character
+ * Return: (0) when sucess
  */
 int _strcmp(char *s1, char *s2)
 {
