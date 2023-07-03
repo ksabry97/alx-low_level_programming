@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _memcpy- makes a new array
  *@dest : pointer

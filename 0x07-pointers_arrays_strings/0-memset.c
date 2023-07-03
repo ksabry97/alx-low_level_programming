@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _memset - makes a new array
  *@s : pointer
