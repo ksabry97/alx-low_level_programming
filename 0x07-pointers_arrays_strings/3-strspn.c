@@ -1,11 +1,11 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strspn - makes a new array
+ * _strspn - returns aprefix of substring 
  *@s : pointer
  *@accept : character
  *
- * Return: unsigned integer
+ * Return: number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
 {
