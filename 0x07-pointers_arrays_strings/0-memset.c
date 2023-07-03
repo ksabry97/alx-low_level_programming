@@ -1,8 +1,8 @@
 /**
- * _memset - makes encrypted message
- *@s :pointer
- *@b :charcater
- *@n :integer
+ * _memset - makes a new array
+ *@s : pointer
+ *@b : character
+ *@n : unsigned integer
  *
  * Return: character
  */
