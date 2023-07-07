@@ -2,7 +2,7 @@
 /**
  * _memcpy- makes a new array
  *@dest : pointer
- *@src :pointer to character
+ *@src :pointer 
  *@n : unsigned integer
  *
  * Return: character
