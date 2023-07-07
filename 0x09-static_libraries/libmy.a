@@ -1,0 +1,437 @@
+!<arch>
+0-isupper.o/    0           0     0     644     195       `
+#include "main.h"
+/**
+ * _isupper - check uppercase
+ *@c: integer
+ * Return: (1) success else (0)
+ */
+int _isupper(int c)
+{
+	if (c > 64 && c < 91)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+0-memset.o/     0           0     0     644     262       `
+#include "main.h"
+/**
+ * _memset - makes a new array
+ *@s : pointer
+ *@b : character
+ *@n : unsigned integer
+ *
+ * Return: character
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
+0-strcat.o/     0           0     0     644     290       `
+#include <string.h>
+/**
+ * _strcat - copies a string
+ * @dest: pointer
+ * @src: pointer
+ *
+ * Return: character
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i;
+	int x;
+	int y;
+
+	x = strlen(dest);
+	y = strlen(src);
+	for (i = 0; i < y; i++)
+	{
+		dest[x + i] = src[i];
+	}
+	return (dest);
+}
+100-atoi.o/     0           0     0     644     173       `
+/**
+ * swap_int - swap two integers
+ * @a: pointer
+ * @b: pointer
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+	int x;
+	int y;
+
+	x = *a;
+	y = *b;
+	*a = y;
+	*b = x;
+}
+
+1-isdigit.o/    0           0     0     644     195       `
+#include "main.h"
+/**
+ * _isdigit - check the digit
+ *@c: integer
+ * Return: (1) success else (0)
+ */
+int _isdigit(int c)
+{
+	if (c > 47 && c < 58)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+1-memcpy.o/     0           0     0     644     293       `
+#include "main.h"
+/**
+ * _memcpy- makes a new array
+ *@dest : pointer
+ *@src :pointer to character
+ *@n : unsigned integer
+ *
+ * Return: character
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
+
+1-strncat.o/    0           0     0     644     330       `
+#include <string.h>
+/**
+ * _strncat - copies a string
+ * @dest: pointer
+ * @src: pointer
+ * @n: integer
+ *
+ * Return: character
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int i;
+	int x;
+	int y;
+
+	x = strlen(dest);
+	y = strlen(src);
+	for (i = 0; n < y ? i < n : i < y; i++)
+	{
+		dest[x + i] = src[i];
+	}
+	return (dest);
+}
+2-strchr.o/     0           0     0     644     326       `
+#include <string.h>
+#include "main.h"
+/**
+ * _strchr - makes a new array
+ *@s : pointer
+ *@c : character
+ *
+ * Return: character
+ */
+char *_strchr(char *s, char c)
+{
+	int i;
+	int x = strlen(s);
+
+	for (i = 0; i < x; i++)
+	{
+		if (s[i] == c)
+		{
+			return ((s + i));
+		}
+	}
+	if (s[i] == c)
+		return ((s + i));
+	return ('\0');
+}
+2-strlen.o/     0           0     0     644     180       `
+#include <string.h>
+/**
+ * _strlen - returns the length of a string
+ * @s: string
+ *
+ * Return: (0) when success
+ */
+int _strlen(char *s)
+{
+	int x;
+
+	x = strlen(s);
+	return (x);
+}
+2-strncpy.o/    0           0     0     644     310       `
+#include <string.h>
+/**
+ * _strncpy - copies a string
+ * @dest: pointer
+ * @src: pointer
+ * @n: integer
+ *
+ * Return: character
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i;
+	int x;
+	int y;
+
+	x = strlen(dest);
+	y = strlen(src);
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
+}
+3-islower.o/    0           0     0     644     186       `
+#include "main.h"
+/**
+ * _islower - check lowercase
+ *@c: integer
+ * Return: (1) success else (0)
+ */
+int _islower(int c)
+{
+	if (c >= 97)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+3-puts.o/       0           0     0     644     239       `
+#include <string.h>
+#include "main.h"
+/**
+ * _puts - returns a string
+ * @str: pointer
+ *
+ * Return: void
+ */
+void _puts(char *str)
+{
+	int x;
+	int i;
+
+	x = strlen(str);
+	for (i = 0; i < x; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+}
+
+3-strcmp.o/     0           0     0     644     428       `
+#include <string.h>
+/**
+ * _strcmp - copies a string
+ * @s1: pointer
+ * @s2: pointer
+ *
+ * Return: (0) when success
+ */
+int _strcmp(char *s1, char *s2)
+{
+	int x;
+	int y;
+	int i;
+
+	x = strlen(s1);
+	y = strlen(y);
+	if (x > y)
+	{
+		return (15);
+	}
+	else if (x < y)
+	{
+		return (-15);
+	}
+	else
+	{
+		for (i = 0; i < x; i++)
+		{
+			if (s1[i] == s2[i])
+			{
+				return (0);
+			}
+			else
+			{
+				return (1);
+			}
+		}
+	}
+	return (0);
+}
+3-strspn.o/     0           0     0     644     437       `
+#include <string.h>
+#include "main.h"
+/**
+ * _strspn - returns a prefix of substring 
+ *@s : pointer
+ *@accept : character
+ *
+ * Return: number of bytes
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int count = 0;
+	int i;
+	int j;
+	int x = strlen(s);
+	int y = strlen(accept);
+
+	for (i = 0; *(s + i) != ' '; i++)
+	{
+		for (j = 0; j < y; j++)
+		{
+			if (*(s + i) == accept[j])
+			{
+				count++;
+			}
+		}
+	}
+	return (count);
+}
+
+4-isalpha.o/    0           0     0     644     195       `
+#include "main.h"
+/**
+ * _isalpha - check alphabet
+ *@c: integer
+ * Return: (1) success else (0)
+ */
+int _isalpha(int c)
+{
+	if (c > 64 && c < 123)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+4-strpbrk.o/    0           0     0     644     173       `
+/**
+ * swap_int - swap two integers
+ * @a: pointer
+ * @b: pointer
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+	int x;
+	int y;
+
+	x = *a;
+	y = *b;
+	*a = y;
+	*b = x;
+}
+
+5-strstr.o/     0           0     0     644     173       `
+/**
+ * swap_int - swap two integers
+ * @a: pointer
+ * @b: pointer
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+	int x;
+	int y;
+
+	x = *a;
+	y = *b;
+	*a = y;
+	*b = x;
+}
+
+6-abs.o/        0           0     0     644     224       `
+#include "main.h"
+/**
+ * _abs - return absoulte
+ *@c: integer
+ * Return: (1) success else (0)
+ */
+int _abs(int c)
+{
+	if (c < 0)
+	{
+		return (c - (c * 2));
+	}
+	else if (c == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (c);
+	}
+}
+9-strcpy.o/     0           0     0     644     173       `
+/**
+ * swap_int - swap two integers
+ * @a: pointer
+ * @b: pointer
+ * Return: void
+ */
+void swap_int(int *a, int *b)
+{
+	int x;
+	int y;
+
+	x = *a;
+	y = *b;
+	*a = y;
+	*b = x;
+}
+
+_putchar.o/     0           0     0     644     258       `
+#include "main.h"
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
+}
