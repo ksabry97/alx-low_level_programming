@@ -1,7 +1,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * _puts - returns astring
+ * _puts - returns a string
  * @str: pointer
  *
  * Return: void
