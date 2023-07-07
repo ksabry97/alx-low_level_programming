@@ -1,16 +1,8 @@
 /**
- * swap_int - swap two integers
+ * _strstr- swap two integers
  * @a: pointer
  * @b: pointer
- * Return: void
+ * Return: character
  */
-void swap_int(int *a, int *b)
-{
-	int x;
-	int y;
-
-	x = *a;
-	y = *b;
-	*a = y;
-	*b = x;
-}
+char *_strstr(char *haystack, char *needle)
+{}
