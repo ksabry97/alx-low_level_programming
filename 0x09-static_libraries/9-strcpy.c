@@ -1,16 +1,9 @@
 /**
- * swap_int - swap two integers
- * @a: pointer
- * @b: pointer
- * Return: void
+ * _strcpy - swap two integers
+ * @src: pointer
+ * @dest: pointer
+ * Return: character
  */
-void swap_int(int *a, int *b)
+char *_strcpy(char *dest, char *src)
 {
-	int x;
-	int y;
-
-	x = *a;
-	y = *b;
-	*a = y;
-	*b = x;
 }
