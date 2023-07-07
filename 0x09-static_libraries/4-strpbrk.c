@@ -1,16 +1,9 @@
 /**
- * swap_int - swap two integers
+ * _strpbrk - swap two integers
  * @a: pointer
  * @b: pointer
- * Return: void
+ * Return: character
  */
-void swap_int(int *a, int *b)
+char *_strpbrk(char *s, char *accept)
 {
-	int x;
-	int y;
-
-	x = *a;
-	y = *b;
-	*a = y;
-	*b = x;
 }
