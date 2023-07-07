@@ -1,7 +1,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strspn - returns aprefix of substring 
+ * _strspn - returns a prefix of substring 
  *@s : pointer
  *@accept : character
  *
