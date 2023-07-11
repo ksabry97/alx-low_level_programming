@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	while (i < x)
+	while (i < size)
 	{
 		y[i] = c;
 		i++;
