@@ -9,15 +9,15 @@
  */
 char *_strdup(char *str)
 {
+	int x;
+	int i = 0;
+	char *y;
+
 	if (!str)
 	{
 		return (NULL);
 	}
-
-	int x = strlen(str);
-	int i = 0;
-	char *y;
-
+	x = strlen(str);
 	y = malloc(x * sizeof(char));
 
 	if (!y)
