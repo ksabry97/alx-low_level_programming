@@ -21,7 +21,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (newNode)
 	{
-		return (newNode);
+		return (*head);
 	}
 	else
 	{
