@@ -8,10 +8,11 @@
  */
 size_t print_list(const list_t *h)
 {
-	int count = 0;
+	long unsigned int count;
 
 	while (h->next != NULL)
 	{
+		count = 0;
 		if (h->str == NULL)
 		{
 			printf("[0] (nil)\n");
@@ -25,7 +26,7 @@ size_t print_list(const list_t *h)
 	}
 	if (h->str == NULL)
 	{
-		printf("[0] (nil)\n")
+		printf("[0] (nil)\n");
 	}
 	else
 	{
