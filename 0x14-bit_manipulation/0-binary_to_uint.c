@@ -16,6 +16,10 @@ unsigned int binary_to_uint(const char *b)
 	int count = 0;
 
 	bin = 0;
+	if (!b)
+	{
+		return (0);
+	}
 	for (i = (n - 1); i >= 0; i--)
 	{
 		int c = b[i];
